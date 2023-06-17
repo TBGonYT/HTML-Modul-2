@@ -1,0 +1,49 @@
+.containerNavigatie{
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    background: aquamarine;
+    box-shadow: 10px 10px 10px 10px rgb(4, 121, 82);
+}
+.containerNavigatie .meniu{
+    display: flex;
+    position: relative;
+}
+.containerNavigatie .meniu li{
+    font-size: xx-large;
+    flex: 1;
+    list-style-type: none;
+    font-family: cursive;
+
+}
+.containerNavigatie .meniu li a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    transition: color 0.5 ease;
+    
+
+}
+a{
+    color:black ;
+}
+.containerNavigatie .meniu li:hover a{
+    color: black;
+}
+.containerNavigatie .meniu li:first-child(2) a{
+    color: rgb(6, 104, 86);
+}
+.containerNavigatie .meniu .linie{
+    position: absolute;
+    height: 5px;
+    width: 40%;
+    background: black;
+    left: 30%;
+    bottom: 0;
+    transition: all 0.8s ease;
+}
+.containerNavigatie .meniu li:nth-child(1):hover ~ .linie{
+    left: 0;
+}
+.containerNavigatie .meniu li:nth-child(3):hover ~ .linie{
+    left: 60%;
+}
