@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator...AGAIN</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>Primul Numar: <p id="nr1"></p> </h1>
+        <h1>Operatia Dorita: <p id="op"></p> </h1>
+        <h1>Al Doilea Numar: <p id="nr2"></p> </h1>
+        <h1><i>Rezultat: <p id="rez"></p> </i></h1>
+
+        <table class="tabel">
+            <!-- primul rand -->
+            <tr>
+                <td>
+                    <button onclick="tasta_7">
+                        7
+                    </button>
+                </td>
+                <td>
+                    <button onclick="tasta_8">
+                        8
+                    </button>
+                </td>
+                <td>
+                    <button onclick="tasta_9">
+                        9
+                    </button>
+                </td>
+                <td>
+                    <button onclick="tasta_reset">
+                        CA
+                    </button>
+                </td>
+            </tr>
+            <!-- al doilea rand -->
+            <tr>
+                <td>
+                    <button onclick="tasta_4">
+                        4
+                    </button>
+                </td>
+                <td>
+                    <button onclick="tasta_5">
+                        5
+                    </button>
+                </td>
+                <td>
+                    <button onclick="tasta_6">
+                        6
+                    </button>
+                </td>
+                <td>
+                    <button onclick="tasta_plus()">
+                        +
+                    </button>
+                </td>
+            </tr>
+            <!-- al treilea rand -->
+            <tr>
+                <td>
+                    <button onclick="tasta_1">
+                        1
+                    </button>
+                </td>
+                <td>
+                    <button onclick="tasta_2">
+                        2
+                    </button>
+                </td>
+                <td>
+                    <button onclick="tasta_3">
+                        3
+                    </button>
+                </td>
+                <td>
+                    <button onclick="tasta_minus()">
+                        -
+                    </button>
+                </td>
+            </tr>
+            <!-- al patrulea rand -->
+            <tr>
+                <td>
+                    <button  onclick="tasta_impartire()">
+                        /
+                    </button>
+                </td>
+                    <td>
+                        <button  onclick="tasta_imultire()">
+                            *
+                        </button>
+                    </td>
+                    <td>
+                        <button>
+                            =
+                        </button>
+                    </td>     
+                <td>
+                <button>
+                    0
+                </button>
+            </td>
+            </tr>
+      
+
+            
+        </table>
+        <script>
+         let operator
+         let nr1
+         let nr2
+        function tasta_plus()
+        {
+            operator = "+"
+            document.getElementById('op').innerHTML=operator;
+        }
+        function tasta_minus()
+        {
+            operator = "-"
+            document.getElementById('op').innerHTML=operator;
+        }
+        function tasta_imultire()
+        {
+            operator = "*"
+            document.getElementById('op').innerHTML=operator;
+        }
+        function tasta_impartire()
+        {
+            operator = "/"
+            document.getElementById('op').innerHTML=operator;
+        }
+        function tasta_7()
+        {
+            operator = "7"
+            document.getElementById('nr1').innerHTML=operator;
+        }
+        function tasta_8()
+        {
+            operator = "8"
+            document.getElementById('nr1').innerHTML=operator;
+        }
+        function tasta_9()
+        {
+            operator = "9"
+            document.getElementById('nr1').innerHTML=operator;
+        }
+        function tasta_4()
+        {
+            operator = "4"
+            document.getElementById('nr1').innerHTML=operator;
+        }
+        function tasta_5()
+        {
+            operator = "5"
+            document.getElementById('nr1').innerHTML=operator;
+        }
+        function tasta_6()
+        {
+            operator = "6"
+            document.getElementById('nr1').innerHTML=operator;
+        }
+        function tasta_1()
+        {
+            operator = "1"
+            document.getElementById('nr1').innerHTML=operator;
+        }
+        function tasta_2()
+        {
+            operator = "3"
+            document.getElementById('nr1').innerHTML=operator;
+        }
+        function tasta_3()
+        {
+            operator = "3"
+            document.getElementById('nr1').innerHTML=operator;
+        }
+        </script>
+    </body>
+</html>
