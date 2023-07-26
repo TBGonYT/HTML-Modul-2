@@ -15,22 +15,22 @@
             <!-- primul rand -->
             <tr>
                 <td>
-                    <button onclick="tasta_7">
+                    <button onclick=tasta_7()>
                         7
                     </button>
                 </td>
                 <td>
-                    <button onclick="tasta_8">
+                    <button onclick=tasta_8()>
                         8
                     </button>
                 </td>
                 <td>
-                    <button onclick="tasta_9">
+                    <button onclick=tasta_9()>
                         9
                     </button>
                 </td>
                 <td>
-                    <button onclick="tasta_reset">
+                    <button onclick=tasta_reset()>
                         CA
                     </button>
                 </td>
@@ -38,17 +38,17 @@
             <!-- al doilea rand -->
             <tr>
                 <td>
-                    <button onclick="tasta_4">
+                    <button onclick=tasta_4()>
                         4
                     </button>
                 </td>
                 <td>
-                    <button onclick="tasta_5">
+                    <button onclick=tasta_5()>
                         5
                     </button>
                 </td>
                 <td>
-                    <button onclick="tasta_6">
+                    <button onclick=tasta_6()>
                         6
                     </button>
                 </td>
@@ -61,17 +61,17 @@
             <!-- al treilea rand -->
             <tr>
                 <td>
-                    <button onclick="tasta_1">
+                    <button onclick=tasta_1()>
                         1
                     </button>
                 </td>
                 <td>
-                    <button onclick="tasta_2">
+                    <button onclick=tasta_2()>
                         2
                     </button>
                 </td>
                 <td>
-                    <button onclick="tasta_3">
+                    <button onclick=tasta_3()>
                         3
                     </button>
                 </td>
@@ -94,12 +94,12 @@
                         </button>
                     </td>
                     <td>
-                        <button>
+                        <button onclick="tasta_egal()">
                             =
                         </button>
                     </td>     
                 <td>
-                <button>
+                <button onclick="tasta_0()">
                     0
                 </button>
             </td>
@@ -109,74 +109,218 @@
             
         </table>
         <script>
-         let operator
-         let nr1
-         let nr2
+         let operator ;      // vairiablia CHAR
+         let nr1 = 0    ;        // vairiablia FLOAT
+         let nr2 = 0   ;        // vairiablia FLOAT
+         let operator_apasat = false; //daca e false suntem in primul nr
+         let rezultat;                             //daca e true suntem in al doilea nr
+                                      //variablia este de tip BOOL
+             let nr_crt;                          
         function tasta_plus()
         {
             operator = "+"
             document.getElementById('op').innerHTML=operator;
+            operator_apasat = true
         }
         function tasta_minus()
         {
             operator = "-"
             document.getElementById('op').innerHTML=operator;
+            operator_apasat = true
         }
         function tasta_imultire()
         {
             operator = "*"
             document.getElementById('op').innerHTML=operator;
+            operator_apasat = true
         }
         function tasta_impartire()
         {
             operator = "/"
             document.getElementById('op').innerHTML=operator;
+            operator_apasat = true
         }
         function tasta_7()
         {
-            operator = "7"
-            document.getElementById('nr1').innerHTML=operator;
+            if(operator_apasat == false)
+            {
+                 nr_crt = 7;
+                 nr1 = nr1*10+nr_crt
+
+            document.getElementById('nr1').innerHTML=nr1;
+            }
+            else{
+                nr_crt = 7;
+                nr2 = nr2*10+nr_crt
+                document.getElementById('nr2').innerHTML=nr2;
+            }
+           
         }
         function tasta_8()
         {
-            operator = "8"
-            document.getElementById('nr1').innerHTML=operator;
+            if(operator_apasat == false)
+            {
+                 nr_crt = 8;
+                 nr1 = nr1*10+nr_crt
+
+            document.getElementById('nr1').innerHTML=nr1;
+            }
+            else{
+                nr_crt = 8;
+                nr2 = nr2*10+nr_crt
+                document.getElementById('nr2').innerHTML=nr2;
+            }
         }
         function tasta_9()
         {
-            operator = "9"
-            document.getElementById('nr1').innerHTML=operator;
+            if(operator_apasat == false)
+            {
+                 nr_crt = 9;
+                 nr1 = nr1*10+nr_crt
+
+            document.getElementById('nr1').innerHTML=nr1;
+            }
+            else{
+                nr_crt = 9;
+                nr2 = nr2*10+nr_crt
+                document.getElementById('nr2').innerHTML=nr2;
+            }
         }
         function tasta_4()
         {
-            operator = "4"
-            document.getElementById('nr1').innerHTML=operator;
+            if(operator_apasat == false)
+            {
+                 nr_crt = 4;
+                 nr1 = nr1*10+nr_crt
+
+            document.getElementById('nr1').innerHTML=nr1;
+            }
+            else{
+                nr_crt = 4;
+                nr2 = nr2*10+nr_crt
+                document.getElementById('nr2').innerHTML=nr2;
+            }
         }
         function tasta_5()
         {
-            operator = "5"
-            document.getElementById('nr1').innerHTML=operator;
+            if(operator_apasat == false)
+            {
+                 nr_crt = 5;
+                 nr1 = nr1*10+nr_crt
+
+            document.getElementById('nr1').innerHTML=nr1;
+            }
+            else{
+                nr_crt = 5;
+                nr2 = nr2*10+nr_crt
+                document.getElementById('nr2').innerHTML=nr2;
+            }
         }
         function tasta_6()
         {
-            operator = "6"
-            document.getElementById('nr1').innerHTML=operator;
+            if(operator_apasat == false)
+            {
+                 nr_crt = 6;
+                 nr1 = nr1*10+nr_crt
+
+            document.getElementById('nr1').innerHTML=nr1;
+            }
+            else{
+                nr_crt = 6;
+                nr2 = nr2*10+nr_crt
+                document.getElementById('nr2').innerHTML=nr2;
+            }
         }
         function tasta_1()
         {
-            operator = "1"
-            document.getElementById('nr1').innerHTML=operator;
+            if(operator_apasat == false)
+            {
+                 nr_crt = 1;
+                 nr1 = nr1*10+nr_crt
+
+            document.getElementById('nr1').innerHTML=nr1;
+            }
+            else{
+                nr_crt = 1;
+                nr2 = nr2*10+nr_crt
+                document.getElementById('nr2').innerHTML=nr2;
+            }
         }
         function tasta_2()
         {
-            operator = "3"
-            document.getElementById('nr1').innerHTML=operator;
+            if(operator_apasat == false)
+            {
+                 nr_crt = 2;
+                 nr1 = nr1*10+nr_crt
+
+            document.getElementById('nr1').innerHTML=nr1;
+            }
+            else{
+                nr_crt = 2;
+                nr2 = nr2*10+nr_crt
+                document.getElementById('nr2').innerHTML=nr2;
+            }
         }
         function tasta_3()
         {
-            operator = "3"
-            document.getElementById('nr1').innerHTML=operator;
+            if(operator_apasat == false)
+            {
+                 nr_crt = 3;
+                 nr1 = nr1*10+nr_crt
+
+            document.getElementById('nr1').innerHTML=nr1;
+            }
+            else{
+                nr_crt = 3;
+                nr2 = nr2*10+nr_crt
+                document.getElementById('nr2').innerHTML=nr2;
+            }
         }
+        function tasta_0()
+        {
+            if(operator_apasat == false)
+            {
+                 nr_crt = 0;
+                 nr1 = nr1*10+nr_crt;
+
+            document.getElementById('nr1').innerHTML=nr1;
+            }
+            else{
+                nr_crt = 0;
+                nr2 = nr2*10+nr_crt
+                document.getElementById('nr2').innerHTML=nr2;
+            }
+        }
+        function tasta_egal()
+        {
+            if (operator == '+')
+            {
+                rezultat = nr1 + nr2;
+            }
+            else if(operator == '-')
+            {
+                rezultat = nr1 - nr2;
+            }
+            else if(operator == '*')
+            {
+                rezultat = nr1 * nr2;
+            }
+            else
+            {
+                rezultat = nr1 / nr2;
+            }
+            document.getElementById('rez').innerHTML=rezultat
+        }
+        function tasta_reset(){
+                document.getElementById("prim_nr").innerHTML="Primul numar este: ";
+                document.getElementById("oper").innerHTML="operatorul este: ";
+                document.getElementById("doi_nr").innerHTML="Al doilea numar este: ";
+                document.getElementById("rez").innerHTML="Rezultatul: ";
+               operator_apasat =false;
+            }
+
+ 
+        
         </script>
     </body>
 </html>
