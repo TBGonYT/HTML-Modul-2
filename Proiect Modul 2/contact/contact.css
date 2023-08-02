@@ -1,0 +1,193 @@
+.containerNavigatie{
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    background: crimson;
+    box-shadow: 10px 10px 10px 10px rgb(97, 4, 23);
+}
+.containerNavigatie .meniu{
+    display: flex;
+    position: relative;
+}
+.containerNavigatie .meniu li{
+    font-size: xx-large;
+    flex: 1;
+    list-style-type: none;
+    font-family: cursive;
+
+}
+.containerNavigatie .meniu li a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    transition: color 0.5 ease;
+    
+
+}
+a{
+    color:black ;
+}
+.containerNavigatie .meniu li:first-child(2) a{
+    color: rgb(75, 1, 1);
+}
+.containerNavigatie .meniu .linie{
+    position: absolute;
+    height: 5px;
+    width: 10%;
+    background: crimson;
+    left: 0%;
+    bottom: 0;
+    transition: all 0.8s ease;
+}
+.containerNavigatie .meniu li:nth-child(1):hover ~ .linie{
+    left: 13%;
+    background: rgb(0, 0, 0);
+    
+}
+.containerNavigatie .meniu li:nth-child(2):hover ~ .linie{
+    left: 45%;
+    background: rgb(0, 0, 0);
+}
+.containerNavigatie .meniu li:nth-child(3):hover ~ .linie{
+    left: 79%;
+    background: rgb(5, 5, 5);
+}
+.jumbotron{
+    height: 700px;
+    background:
+    linear-gradient(
+        rgb(244, 15, 15, 0.712),
+        rgb(117, 10, 10, 0.274)),
+    url("https://source.unsplash.com/1080x720/?tabletennis") ;
+    background-size: cover;
+    text-align: center;
+     
+
+}
+.jumbotron h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'cursive';
+    font-size: xx-large;
+    background: linear-gradient(
+        rgb(0, 0, 0, 0.35),
+        rgba(255, 0, 0, 0.5));
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+}
+.jumbotron .tabletennis{
+    width: 100px;
+    height: 100px;
+    -webkit-animation: color-tabletennis 3s infinite;
+}
+@-webkit-keyframes color-tabletennis{
+    0%, 100% { -webkit-filter: invert(20%) sepia(70%) saturate(3300%) hue-rotate(140deg) brightness(130%) contrast(100%);}
+    50% { -webkit-filter: invert(100%) sepia(10%) saturate(500%) hue-rotate(160deg) brightness(100%) contrast(100%);}
+}
+  /* cards */
+  .continut-text{
+    font-family: cursive;
+    font-size: xx-large;
+    margin: 5% 10% 5% 10%;
+}
+.col{
+    font-family: cursive;
+    font-size: xx-large;
+}
+.col-md-9{
+    font-family: cursive;
+    font-size: xx-large;
+}
+.tenergy{
+    background-color:orange;
+}
+.rozena{
+    background-color: palevioletred;
+}
+.element_card{
+list-style-type: none;
+}
+.sectiune_carduri{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sectiune_carduri h1{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.lista_carduri{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.element_card{
+    display: flex;
+    padding: 16px;
+}
+@media (win-width: 650px){
+    .element_card{
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px){
+    .element_card{
+        width: 33%;
+    }
+}
+.sectiune_carduri .card{
+    display: flex;
+    box-shadow: 10px 10px 8px 10px rgba(0,0,0,0.83);
+}
+.sectiune_carduri img{
+    max-width: 100%;
+    height: auto;
+}
+.sectiune_carduri .btn{
+    padding: 14px;
+    font-size: 14px;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    width: 100%;
+    background: transparent;
+    border: 1px solid grey;
+    color: whitesmoke;
+}
+.titlu_card{
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.titlu_card{
+    color: whitesmoke;
+    font-size: 14px;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+.sectiune_carduri .btm:hover{
+    background-color: rgba(255,255,255,0.12);
+    color: whitesmoke;
+}
+.titlu_card{
+    color: black;
+}
+.glayzer{
+    background-color: rgb(255, 217, 0);
+}
+.warning{
+    color: rgb(255, 255, 255);
+    background-color: rgb(78, 2, 2);
+    text-align: center;
+    font-size: xx-large;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+a{
+    color: whitesmoke;
+}

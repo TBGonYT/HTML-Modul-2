@@ -1,0 +1,13 @@
+{
+    "tabletennis" : [
+        {
+            "style" : "Defender",
+            "description" : "They are annoying. The usualy do not attack.",
+            "pallete face" : "Normal face with spikes on it. I call it grass🌿"
+        } , {
+            "style" : "Attacker",
+            "description" : "They ALLWAYS attack when the have the chance",
+            "pallete face" : "Normal face. Sometimes, they have collored faces 🟥, 🟩, 🟦, 🟪 "
+        }
+    ]
+}
